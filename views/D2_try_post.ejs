@@ -1,0 +1,37 @@
+<%- include('./parts/html-header.ejs') %>
+<%- include('./parts/html-navbar.ejs') %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <form method="post" >
+                <div class="form-group">
+
+                    <label for="email">Email address</label>
+                    <input type="text" class="form-control" id="email" name="email">
+                    <% if(locals.email){  %>
+                        <small>上次email : <%= email %></small>
+                    <%  } %>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                    <% if(locals.name){  %>
+                        <small>上次email : <%= name %></small>
+                    <%  } %>
+
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+<%- include('./parts/html-body.ejs') %>
+<%- include('./parts/html-footer.ejs') %>

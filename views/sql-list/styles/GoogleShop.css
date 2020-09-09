@@ -1,0 +1,111 @@
+.font-smaller {
+  font-size: smaller;
+}
+
+.font-small {
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+}
+
+.carousel-text {
+  text-align: start;
+  left: 10%;
+  top: 25%;
+}
+
+.carousel-img {
+  max-height: 65vmin;
+  margin: auto 8vw auto auto;
+}
+
+.color-black {
+  color: black;
+}
+
+.bgcolor-gray {
+  background-color: rgb(247, 247, 247);
+}
+
+.bgcolor-white {
+  background-color: white;
+}
+
+.bgcolor-none {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.img-fix {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100vh;
+  max-width: 80vw;
+}
+
+.btn-W2D {
+  background-color: #fff;
+  border: 2px solid rgb(202, 202, 202);
+}
+
+.btn-W2D:hover {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+}
+
+.btn-blue-border {
+  background-color: rgb(247, 247, 247);
+  color: #1a73e8;
+  border: 2px solid #1a73e8;
+}
+
+.btn-blue-border:hover {
+  background-color: #1a73e8;
+  border: 2px solid #1a73e8;
+  color: white;
+}
+
+.ul-link {
+  list-style-type: none;
+}
+
+.ul-link a {
+  color: rgb(110, 110, 110);
+}
+
+.ul-link a:hover {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.linl-decoration-none a:hover {
+  text-decoration: none;
+}
+
+.figure-hover:hover {
+  animation: anima-bg2g 1 1.5s ease-out;
+  background-color: rgb(228, 228, 228);
+}
+
+.rotate-hover:hover {
+  animation: anima-rotate 1 1s ease;
+}
+
+@keyframes anima-bg2g {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: rgb(228, 228, 228);
+  }
+}
+
+@keyframes anima-rotate {
+  0% {
+    transform: rotate(0deg)  
+  }
+  100% {
+    transform: rotate(360deg) 
+  }
+}

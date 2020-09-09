@@ -1,0 +1,34 @@
+<%- include('./parts/html-header.ejs') %>
+<%- include('./parts/html-navbar.ejs') %>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">age</th>
+      </tr>
+    </thead>
+    <tbody>
+
+
+    <% for(let i of member ) { %>
+      <tr>
+        <th scope="row"><%= i.id %></th>
+        <td><%= i.name %></td>
+        <td><%= i.age %></td>
+      </tr>
+    <% } %>
+
+
+
+    </tbody>
+  </table>
+
+
+
+
+<%- include('./parts/html-body.ejs') %>
+<%- include('./parts/html-footer.ejs') %>
+

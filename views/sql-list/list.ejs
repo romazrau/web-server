@@ -1,0 +1,30 @@
+<%- include('../parts/html-header.ejs') %>
+<%- include('../parts/html-navbar.ejs') %>
+
+<h2><%= name %></h2>
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+    </tr>
+
+    <%  for(let item  of data ) {    %>
+       <tr>
+           <td>
+               <%=  item.fId  %>
+           </td>
+           <td>
+            <%=  item.fName  %>
+        </td>
+
+       </tr>
+
+    <%  }  %>
+
+</table>
+
+
+
+<%- include('../parts/html-body.ejs') %>
+<%- include('../parts/html-footer.ejs') %>
